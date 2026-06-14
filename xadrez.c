@@ -7,13 +7,15 @@
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-    int a = 1, b = 1, c;
+    int a = 1, b = 1, c, d, e;
+    int torre, bispo, rainha, cavalo;
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    printf("Torre\n");
-    //Torre se move 5 casas para direita.
-    while (a <= 5)
+    printf("Torre: ");
+    scanf("%d", &torre);
+
+    while (a <= torre)
     {
         printf("Direita\n");
         a++;
@@ -22,21 +24,23 @@ int main() {
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    printf("Bispo:\n");
-    //Bispo se move 5 casas para cima direita.
+    printf("Bispo: ");
+    scanf("%d", &bispo);
+
     do
     {
         printf("Cima,Direita\n");
         b++;
-    } while (b <= 5);
+    } while (b <= bispo);
     
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    printf("Rainha:\n");
-    //Rainha se move 8 casas para esquerda
-    for (c = 1; c <= 8; c++)
+    printf("Rainha: ");
+    scanf("%d", &rainha);
+
+    for (c = 1; c <= rainha; c++)
     {
        printf("Esquerda\n");
     }
@@ -44,6 +48,18 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    printf("Cavalo: \n");
+
+    for (d = 1; d <= 1; d++)
+    {
+        for (e = 1; e <= 2; e++)
+        {
+            printf("Cima\n");
+        }
+        printf("Direita\n");    
+    }
+    
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
